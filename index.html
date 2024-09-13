@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI | Brucel</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <form action="">
+            <div class="form-header">
+                <h1>BMI Checker</h1>
+                <h4>Isi form berikut untuk menghitung Indeks Massa Tubuh (BMI) Anda.</p>
+                </h4>
+            </div>
+            <div class="form_age">
+                <label class="age" for="gender">Jenis Kelamin</label>
+                <div class="input-group">
+                  <input type="radio" name="gender" id="male" value="Pria" class="form-input-check" checked>
+                  <label for="male">Pria</label>
+                  <input type="radio" name="gender" id="female" value="Wanita" class="form-input-check" checked>
+                  <label for="female">Wanita</label>
+                </div>
+                <span id="genderErrorMessage" class="error-message"></span>
+            </div>
+            <div class="form-input">
+                <label for="age">Umur</label>
+                <input type="number" id="age" min="1" placeholder="Berapa Umur Anda" required>
+                <span id="age_error" class="error-message"></span>
+            </div>
+            <div class="form-input">
+                <label for="weight">Masukkan Berat Badan Anda di Sini (Kg) dan Temukan Hasilnya</label>
+                <input id="weight" type="text" placeholder="contoh: 65" required>
+                <br>
+                <span id="weight_error" class="error-message"></span>
+            </div>
+            <div class="form-input">
+                <label for="height">Masukkan Tinggi Badan Anda di Sini (Cm) untuk Melihat Hasilnya</label>
+                <input id="height" type="text" placeholder="contoh: 180" required>
+                <br>
+                <span id="height_error" class="error-message"></span>
+            </div>            
+            <button id="btn">Hitung BMI</button>
+            <button type="reset" class="btn btn-reset">Reset</button>
+            <p id="result-bmi" class="result-bmi"></p>
+        </form>
+    </div>
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
